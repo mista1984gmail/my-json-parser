@@ -1,0 +1,11 @@
+package ru.clevertec.json.parser.util;
+
+public class ConstantsForTest {
+        public static final String JSON_PERSON_TEST_DATA_ALL_SUPPORTED_TYPES = "{\"stringValue\":\"Name\",\"integerValue\":39,\"byteValue\":73,\"shortValue\":25649,\"longValue\":12000000,\"floatValue\":15.89,\"doubleValue\":799.12,\"characterValue\":\"A\",\"booleanValue\":true,\"localDateValue\":[1984,9,12],\"localDateTimeValue\":[1984,1,15,15,35],\"valueOfSet\":[\"second\",\"first\"],\"listValue\":[1,2,3,4,5,6,7,8,9],\"mapValue\":{\"1\":\"first\",\"2\":\"second\"}}";
+        public static final String JSON_CLIENT_TEST_NESTED_OBJECT = "{\"id\":1,\"firstName\":\"Ivan\",\"secondName\":\"Ivanov\",\"dateOfRegistration\":[2021,9,12],\"email\":\"ivan@email.com\",\"telephones\":[\"+375291234567\",\"+375297654321\",\"+375291111111\"],\"address\":{\"id\":1,\"country\":{\"id\":1,\"index\":17,\"name\":\"Belerus\",\"coordinates\":[45.5,78.23,58.2,89.4]},\"city\":\"Minsk\",\"street\":\"Korotkevicha\",\"numberOfHouse\":154}}";
+        public static final String JSON_PRODUCT = "{\"id\":1,\"fullName\":\"white cup of tea\",\"price\":15.99,\"barcode\":\"12345678910\"}";
+        public static final String JSON_PRODUCT_WITH_NOT_EVEN_CURLY_BRACKET = "{\"id\":1,\"fullName\":\"white cup of tea\",\"price\":15.99,\"barcode\":\"12345678910\"}}";
+        public static final String JSON_CLIENT_WITH_NOT_EVEN_SQUARE_BRACKET = "{\"id\":1,\"firstName\":\"Ivan\",\"secondName\":\"Ivanov\",\"dateOfRegistration\":[2021,9,12],\"email\":\"ivan@email.com\",\"telephones\":[\"+375291234567\",\"+375297654321\",\"+375291111111\",\"address\":{\"id\":1,\"country\":{\"id\":1,\"index\":17,\"name\":\"Belerus\",\"coordinates\":[45.5,78.23,58.2,89.4]},\"city\":\"Minsk\",\"street\":\"Korotkevicha\",\"numberOfHouse\":154}}";
+        public static final String JSON_PRODUCT_WITHOUT_FIRST_BRACKET = "\"id\":1,\"fullName\":\"white cup of tea\",\"price\":15.99,\"barcode\":\"12345678910\"}";
+        public static final String JSON_CLIENT_TEST_NULL_NESTED_OBJECT = "{\"id\":1,\"firstName\":\"Ivan\",\"secondName\":null,\"dateOfRegistration\":[2021,9,12],\"email\":\"ivan@email.com\",\"telephones\":[\"+375291234567\",\"+375297654321\",\"+375291111111\"],\"address\":null}";
+}
